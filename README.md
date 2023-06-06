@@ -35,417 +35,497 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM :
-### home html
-``` 
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-  <title>Aj-Private Limited</title>
-<link rel="stylesheet" href="static/css/layout.css" />
-<link rel="icon" href="static/images/icon.png" type="image/x-icon" />
-</head>
-<body>
-<div class="container">
-<div class="banner">AJ-Private Limited</div>
-<div class="menu">
-<div class="menuitemselected"><a href="company.html">Home</a></div>
-<div class="menuitem"><a href="product.html">Products</a></div>
-<div class="menuitem"><a href="people.html">People</a></div>
-<div class="menuitem"><a href="contact.html">Contact Us</a></div>
-</div>
-<div class="content">
-<div class="homecontent">
-<h1>About Us</h1>
-<img src="static/images/iron.png" style="width:300px; height:300px;" />
-<div class="contenttext">
-At Tally, we believe in the power of technology to make business
-owners efficient, empowered and happier, so they can focus on what
-matters most for their business. We design our products to focus on
-just that to make our products work for you, and not the other way
-around.
-<br />
-Our new product TallyPrime takes this to a new level, making your
-start to automation, or your switch to Tally simpler than ever
-before. You can now discover the product much more easily and make
-the product do more for you, without learning anything new. There is
-greater flexibility as the product adapts to your business and your
-way of working. And the transformed look and feel will only make you
-love the product even more.
-<ul>
-<li>Simple to learn, easier to use</li>
-<li>Insightful , actionable & customizable reports</li>
-<li>Anywhere, anytime and secure access</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="footer">
-Copyright &#169; 2022 Aj-Private.LTD, Developed by Ajay Aswin.M
-</div>
-</div>
-</body>
-</html>
-```
-### product html:
-``` 
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-<title>Aj-Private Limited</title>
-<link rel="stylesheet" href="static/css/layout.css" />
-<link rel="icon" href="static/images/icon.png" type="image/x-icon" />
-</head>
-<body>
-<div class="container">
-<div class="banner">AJ-Private Limited.</div>
-<div class="menu">
-<div class="menuitem"><a href="company.html">Home</a></div>
-<div class="menuitemselected">
-<a href="product.html">Products</a>
-</div>
-<div class="menuitem"><a href="people.html">People</a></div>
-<div class="menuitem"><a href="contact.html">Contact Us</a></div>
-</div>
-<div class="content">
-<div class="productcontent">
-<h1>Our Premium Products</h1>
-<div class="productitems">
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/tally_gold.png" alt="product image">
-</div>
-<div class="itemname">Tally Gold</div>
-<div class="itemprice">Price: Rs.40,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/tally_silver.png" alt="product image">
-</div>
-<div class="itemname">Tally Silver</div>
-<div class="itemprice">Price: Rs.10,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img1.png" alt="product image">
-</div>
-<div class="itemname">Tally Simple Steps</div>
-<div class="itemprice">Price: Rs.12,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img2.png" alt="product image">
-</div>
-<div class="itemname">Tally Author edision </div>
-  <div class="itemprice">Price: Rs.14,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img3.png" alt="product image">
-</div>
-<div class="itemname">Tally GST</div>
-<div class="itemprice">Price: Rs.15,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img4.png" alt="product image">
-</div>
-<div class="itemname">Tally PRIME</div>
-<div class="itemprice">Price: Rs.18,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img5.png" alt="product image">
-</div>
-<div class="itemname">Tally Essential</div>
-<div class="itemprice">Price: Rs.11,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img6.png" alt="product image">
-</div>
-<div class="itemname">Tally Power of simplcity </div>
-<div class="itemprice">Price: Rs.13,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img7.png" alt="product image">
-</div>
-<div class="itemname">Tally Impleating</div>
-<div class="itemprice">Price: Rs.14,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img8.png" alt="product image">
-</div>
-<div class="itemname">Tally Advance</div>
-<div class="itemprice">Price: Rs.20,000.00 </div>
-</div>
-<div class="productitem">
-<div class="itemimage">
-<img src="static/images/img/img9.png" alt="product image">
-</div>
-<div class="itemname">Tally GST 4th edision</div>
-<div class="itemprice">Price: Rs.19,000.00 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer">
-Copyright &#169; 2022 Aj-Private.LTD, Developed by Ajay Aswin.M
-</div>
-</div>
-</body>
-</html>
-```
 
-### People.html:
+### Home Page:
 ```
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
-<head>
-<title>Aj-Private Limited</title>
-<link rel="stylesheet" href="static/css/layout.css" />
-<link rel="icon" href="static/images/icon.png" type="image/x-icon" />
-</head>
-<body>
-<div class="container">
-<div class="banner">AJ-Private Limited.</div>
-<div class="menu">
-<div class="menuitem"><a href="company.html">Home</a></div>
-<div class="menuitem">
-<a href="product.html">Products</a></div>
-<div class="menuitemselected"><a href="people.html">People</a></div>
-<div class="menuitem"><a href="contact.html">Contact Us</a></div>
-<div class="content">
-<div class="productcontent">
-<h1>People Of Company </h1>
-<figure>
-<p>
-<img src="static/images/img2/pre.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>PRESIDENT</h2></figcaption>
-  </hr>
-  
-  <p>
-    <img src="static/images/img2/fou.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>FOUNDER</h2></figcaption>
-<hr>
-<p>
-<img src="static/images/img2/mang.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>CO-FOUNDER</h2></figcaption>
-<hr>
-<p>
-<img src="static/images/img2/head.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>DIRECTOR</h2></figcaption>
-<hr>
-<p>
-<img src="static/images/img2/vk.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>MANAGER</h2></figcaption>
-<hr>
-<p>
-<img src="static/images/img2/aj.png"
-width="332px" height="277px">
-</p>
-<figcaption> <h2>HEAD</h2></figcaption>
-<hr>
-</figure>
-</div>
-</div>
-<div class="footer">
-Copyright &#169; 2022 Aj-Private.LTD, Developed by Ajay Aswin.M
-</div>
-</div>
-</body>
-  </html>
-  ````
-  ### Content.html:
-  ```
-  <!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-<title>Aj</title>
-<link rel="stylesheet" href="static/css/layout.css" />
-<link rel="icon" href="static/images/icon2.png" type="image/x-icon" />
-</head>
-<body>
-<div class="container">
-<div class="banner">AJ-Private Limited</div>
-<div class="menu">
-<div class="menuitem"><a href="company.html">Home</a></div>
-<div class="menuitem"><a href="product.html">Products</a></div>
-<div class="menuitem"><a href="people.html">People</a></div>
-<div class="menuitemselected"><a href="contact.html">Contact Us</a></div>
-</div>
-<div class="content">
-<h1>Our Contact Address</h1>
-<div class="contacttext">
-Phone:8248965167
-<br>Email-address:ajprivatelimited@email.com
-</div>
-</div>
-<div class="footer">
-Copyright &#169; 2022 Aj-Private.LTD, Developed by Ajay Aswin.M
-</div>
-</div>
-</body>
+  <head>
+    <title>GET3D Private Limited</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="container">
+      
+      
+      <div class="banner">GET3D Private Limited</div>
+    
+      <div class="menu">
+        <div class="menuitemselected"><a href="home.html">Home</a></div>
+        <div class="menuitem"><a href="products.html">Product</a></div>
+        <div class="menuitem"><a href="people.html">People</a></div>
+        <div class="menuitem"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1><b>About Us<b></h1>
+          
+          <div class="contenttext">
+           Welcome to GET3D Private Limited!<br><br>
+           At GET3D Private Limited, we bring your ideas to life with cutting-edge technology and unparalleled precision.
+           <br>As a leading provider of 3D printing services, we specialize in transforming your concepts into tangible, high-quality objects
+           that push the boundaries of innovation.
+            <br /><br><br>
+           Services We Offer:
+            <ul>
+              <li><b>Prototyping:<b> Transform your designs into physical prototypes quickly and cost-effectively.</li>
+              <li><br><b>Custom Manufacturing:<b> we offer custom manufacturing services work closely with you to understand your requirements</li>
+              <li><br><b>Design Assistance:<b> Our team of skilled designers and engineers is ready to assist you in optimizing your 3D designs for printing.</li>
+              <li><br><b>Artistic Creations:<b> Unleash your creativity with our artistic 3D printing services.</li>
+              <li><br>Whether you're a sculptor, jewelry designer, or architect, we can help you bring your intricate and unique creations to life with stunning detail and precision. </li>  
+            </ul>
+                      </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyrights @ 2023 GET3D Private Limited  , Developed by RAJESH A
+      </div>
+    </div>
+  </body>
 </html>
 ```
-### CSS:
+### Product Page:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GET3D Private Limited</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  </head>
+
+  <body align="center">
+    <div class="container">
+      <div class="banner">GET YOUR DESIRED 3D MODELS</div>
+      <div class="menu">
+        <div class="menuitem"><a href="home.html">Home</a></div>
+        <div class="menuitemselected"><a href="product.html">Products</a></div>  
+        <div class="menuitem"><a href="people.html">People</a></div>
+        <div class="menuitem"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="productcontent">    
+          <h1>Our Top Selling Products</h1>
+          <div class="productitems">
+
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="bird.jpeg" alt="product image">
+                  </div>
+                  <div class="itemname">Bird Statue Model</div>
+                  <div class="itemprice">Price:Rs.999</div>
+                  <button>Buy now</button>
+                  <button>Add to Cart</button>
+              </div>
+
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="dollar.jpeg"  alt="product image">
+                  </div>
+                  <div class="itemname">Pedant_Butterfly_dollar</div>
+                  <div class="itemprice">Price:Rs.1999</div>
+                  <button >Buy now</button>
+                  <button>Add to Cart</button>
+                  
+
+              </div>
+
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="eagle.jpeg"  alt="product image">
+                  </div>
+                  <div class="itemname">Eagle Statue</div>
+                  <div class="itemprice">Price: Rs.1199</div>
+                  <button>Buy now</button>
+                  <button>Add to Cart</button>
+              
+              </div>
+
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="ring2.jpeg"  alt="product image">
+                </div>
+                <div class="itemname">Engagement Ring Women</div>
+                <div class="itemprice">Price: Rs.1299 </div>
+                <button>Buy now</button>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="productitem"> 
+              <div class="itemimage">
+              <img src="gold.jpeg"  alt="product image">
+              </div>
+              <div class="itemname">Gold Printed Coin</div>
+              <div class="itemprice">Price: Rs.699</div>
+              <button>Buy now</button>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="vase.jpeg"  alt="product image">
+            </div>
+            <div class="itemname">Hand Vase</div>
+            <div class="itemprice">Price: Rs.1799 </div>
+            <button>Buy now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="productitem"> 
+          <div class="itemimage">
+          <img src="horse.jpeg"  alt="product image">
+          </div>
+          <div class="itemname">Horse Statue</div>
+          <div class="itemprice">Price: Rs.1999</div>
+          <button>Buy now</button>
+          <button>Add to Cart</button>
+      </div>
+
+      <div class="productitem"> 
+        <div class="itemimage">
+        <img src="house1.jpeg"  alt="product image">
+        </div>
+        <div class="itemname">Constructed_House Design</div>
+        <div class="itemprice">Price: Rs.5999 </div>
+        <button>Buy now</button>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="productitem"> 
+      <div class="itemimage">
+      <img src="lion.jpeg"  alt="product image">
+      </div>
+      <div class="itemname">Lion with Crown</div>
+      <div class="itemprice">Price: Rs.2,990</div>
+      <button>Buy now</button>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="productitem"> 
+       <div class="itemimage">
+       <img src="mhouse.jpeg"  alt="product image">
+       </div>
+       <div class="itemname">Medieval House</div>
+       <div class="itemprice">Price: Rs.3199 </div>
+       <button>Buy now</button>
+       <button>Add to Cart</button>
+    </div>
+    <div class="productitem"> 
+      <div class="itemimage">
+      <img src="ring.jpeg"  alt="product image">
+    </div>
+       <div class="itemname">Proposal Ring Women</div>
+       <div class="itemprice">Price: Rs.1500</div>
+       <button>Buy now</button>
+       <button>Add to Cart</button>
+    </div>
+
+    <div class="productitem"> 
+      <div class="itemimage">
+      <img src="ring1.jpeg"  alt="product image">
+     </div>
+        <div class="itemname">Wedding Ring Women</div>
+        <div class="itemprice">Price: Rs.2199 </div>
+        <button>Buy now</button>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>        
+  </div>
+    <div class="footer">
+      Copyright @ 2023 GET3D Private Limited, Developed by RAJESH A
+    </div>
+  </div>
+ </body>
+</html>
+```
+### People Page:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GET3D Private Limited</title>
+    <link rel="stylesheet" href="layout1.css"/>
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  </head>
+
+  <body >
+    <div class="container">
+      <div class="banner">OUR GLOBAL  PARTNERS</div>
+      <div class="menu">
+        <div class="menuitem"><a href="home.html">Home</a></div>
+        <div class="menuitem"><a href="products.html">Product</a></div>  
+        <div class="menuitemselected"><a href ="people.html"></a>People</a></div>
+        <div class="menuitem"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <div style="background-color:#afbae0"  class="peopleitem"> 
+        <div class="peopleimage">
+        <img src="Kristin-Mulherin.jpg"  alt="people image">
+      </div>
+         <div class="peoplename"><b>Kristin Mulherin President of Women in 3D Printing
+           <br>
+           President of Women in 3D Printing
+         </div>
+      </div>
+      <div style="background-color:#afbae0;" class="peopleitem"> 
+        <div  class="peopleimage">
+        <img src="Blake_Essentium.jpg"  alt="people image">
+      </div>
+         <div  class="peoplename">Blake Teipel 
+           <br>
+           CEO and Co-founder of Essentium
+         </div>
+      </div>
+      <div style="background-color:#afbae0" class="peopleitem"> 
+        <div class="peopleimage">
+        <img src="EastonLaChappelle.jpg"  alt="people image">
+      </div>
+         <div  class="peoplename">Easton LaChappelle<br>CEO of Unlimited Tomorrow </div>
+      </div>
+      <div style="background-color:#afbae0;" class="peopleitem"> 
+        <div class="peopleimage">
+        <img src="RedefineMeatCEO.jpg"  alt="peopleimage">
+      </div>
+         <div class="peoplename">Eshchar Ben-Shitrit<br> CEO and Co-Founder of Redefine Meat </div>
+      </div>
+      <div style="background-color:#afbae0;" class="peopleitem"> 
+        <div class="peopleimage">
+        <img src="shai_terem.jpg"  alt="people image">
+      </div>
+         <div class="peoplename">Shai Terem  <br>CEO of Markforged</div>
+      </div>
+      <div style="background-color:#afbae0;" class="peopleitem"> 
+        <div class="peopleimage">
+        <img src="Sherri-Monroe.jpg"  alt="people image">
+      </div>
+         <div class="peoplename">Sherri Monroe
+            <br> Executive Director Of AMGTA </b></div>
+      </div>
+      <div class="footer">
+        Copyrights @ 2023 GET3D Private Limited, Developed by RAJESH A
+      </div>
+    </div>
+  </body>
+</html>
+```
+### Contact Page:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GET3D PRIVATE LIMITED</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner">Feel Free to Contact Us</div>
+      <div class="menu">
+        <div class="menuitem"><a href="home.html">Home</a></div>
+        <div class="menuitem"><a href="products.html">Product</a></div>
+        <div class="menuitem"><a href="people.html">People</a></div>
+        <div class="menuitem"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <div class="content" align="center">
+        <b>Ready to turn your ideas into reality? Contact us today to discuss your project or request a quote.<br>
+        Our team of experts is eager to assist you and provide tailored solutions that will elevate your designs to the next level.<br>
+          Join the 3D printing revolution with GET3D Private Limited and experience the power of limitless possibilities!</b>
+
+          <ul align="left" >
+            
+             
+              <br>
+              <li><b>Contact us through</b><br>
+                <br>
+              <b>Phone:</b>8778079453;7010716063<br></li>
+                <br>
+                <b>Telephone </b>: (345)222-1212<br>
+                <br>
+                <b>E-mail</b>:get3dprivate@gmail.com
+              <br>
+              <br>
+              <br>
+              <li>
+                <b>Address:</b><br><br>
+
+                Near Fortune towers<br>
+                Kovilambakkam<br>
+                CHENNAI<br>
+            </li>
+
+              <br>VERIFIED*
+          </ul>    
+        </div>
+        <div class="footer">
+          Copyrights @ 2023 GET3D Private Limited , BY RAJESH A
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+  </body>
+</html> 
+```
+### CSS LAYOUT
 ```
 * {
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
 }
 body {
-background-color: lightblue;
-color: #17421d;
+  background-color: #fefeff;
+  color: #070707;
 }
 .container {
-width: 1080px;
-margin-left: auto;
-margin-right: auto;
-border-width: 1px 1px 1px 1px;
-border-style: solid BLACK;
-box-shadow: 15px 15px 8px gray;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  box-shadow: 15px 15px 8px #afbae0;
 }
+
 .banner {
-display: block;
-width: 100%;
-height: 250px;
-text-align: center;
-font-size: 60px;
-background-image: url("/static/images/back.png");
-background-size: 100% 100%;
-margin: 0px 0px 0px 0px;
-padding-top: 150px;
-color: BLACK;
+  display: block;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: 65px;
+  background-image: url("img.jpeg");
+  background-size: 100% 100%;
+  margin: 0px 0px 0px 0px;
+  padding-top: 230px;
+  color: aqua;
 }
+
 .menu {
-display: block;
-width: 100%;
-height: 50px;
-font-size: larger;
-background-color: rgb(255, 123, 0);
-text-align: center;
-padding-top: 15px;
-margin: 0px 0px 0px 0px;
-border-width: 1px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: larger;
+  background-color: #afbae0;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
 }
+
 .menuitem {
-display: inline-block;
-margin-left: 10px;
-margin-right: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .menuitemselected {
-display: inline-block;
-margin-left: 10px;
-margin-right: 10px;
-color: #f80d1d;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #080808;
 }
+
 .menuitem a {
-text-decoration: none;
-color: #fdfdfd;
+  text-decoration: none;
+  color: #080808;
 }
+
 .content {
-display: block;
-width: 100%;
-background-color: lemonchiffon;
-min-height: 500px;
-margin: 0px 0px 0px 0px;
-border-width: 1px;
-border-color: white;
-border-style: solid;
+  display: block;
+  width: 100%;
+  background-color: #afbae0;
+  min-height: 500px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
+  border-color: #afbae0;
+  border-style: solid;
 }
 .homecontent {
-min-height: 500px;
-margin: 10px 10px 10px 10px;
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
 }
 .homecontent h1 {
-text-align: left;
+  text-align: left;
 }
 .homecontent img {
-float: right;
-width: 400px;
-height: 300px;
-margin-left: 10px;
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-left: 10px;
 }
+
 .contenttext {
-text-align: justify;
+  text-align: justify;
 }
+
 .productcontent {
-min-height: 500px;
-margin: 10px 10px 10px 10px;
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
 }
+
 .productcontent h1 {
-text-align: left;
+  text-align: left;
 }
+
 .productitems {
-display: block;
+  display: block;
 }
+
 .productitem {
-display: inline-block;
-width: 30%;
-height: 250px;
-text-align: center;
+  display: inline-block;
+  width: 24%;
+  height: 250px;
+  text-align: center;
 }
+
 .productitem img {
-width: 100px;
-height: 100px;
-display: block;
+  width: 100px;
+  height: 100px;
+  display: block;
 }
 .productitem .itemimage {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 100px;
-margin-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-bottom: 5px;
 }
+
 .productitem .itemname {
-display: block;
+  display: block;
 }
 .productitem .itemprice {
-display: block;
+  display: block;
 }
+
+
+
 .footer {
-display: block;
-width: 100%;
-height: 40px;
-background-color: rgb(255, 123, 0);
-text-align: center;
-padding-top: 10px;
-margin: 0px 0px 0px 0px;
-color:white;
-}
-.contact{
-border:100px;
-}
-.contenttext {
-text-align: justify;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #afbae0;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px 0px 0px 0px;
+  color: #000000;
 }
 ```
-
-
 ## OUTPUT:
 
 ### Home Page:
+![output](home.jpg)
 
-![image](https://github.com/Rajeshanbu/productcompanywebsite/assets/118924713/147fd523-e6f0-43a1-a147-4e7e857e64fa)
-![image](https://github.com/Rajeshanbu/productcompanywebsite/assets/118924713/b9314891-1b8b-4541-9d1a-e36c264057a2)
-![image](https://github.com/Rajeshanbu/productcompanywebsite/assets/118924713/90b4e3a6-d5aa-40a1-90fa-51a5a0a6e578)
-![image](https://github.com/Rajeshanbu/productcompanywebsite/assets/118924713/070dbf19-f298-4efa-8b46-e6a6c9c802eb)
+### Product Page:
+![output](product.jpg)
+
+### People Page:
+![output](people.jpg)
+
+### Contact Page:
+![output](contact.jpg)
 
 
 ## Result:
